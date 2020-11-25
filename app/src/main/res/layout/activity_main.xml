@@ -14,6 +14,10 @@
   ~ limitations under the License.
   -->
 
+<!-- COMPLETED (01) Remove the code above and add the LinearLayout code from the classroom -->
+<!-- COMPLETED (03) Position the views
+         Remember to set the orientation of the LinearLayout to vertical
+         and use layout_gravity to align the elements so they are centered as expected -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,10 +29,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
         android:text="1" />
 
+    <!-- COMPLETED (02) Add the Button
+         Use "wrap_content" for its width and height
+         Use "center_horizontal" for the layout_gravity -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
