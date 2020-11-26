@@ -17,6 +17,8 @@
 package com.example.android.diceroller
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -25,12 +27,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // TODO (02) Use findViewById to get a reference to the button
+        // COMPLETED (02) Use findViewById to get a reference to the button
         // and assign it to an immutable variable called rollButton
-
-        // TODO (03) set the OnClickListener for the button
-
-        // TODO (04) Show a Toast when the OnClickListener is called
+        val rollButton: Button = findViewById(R.id.roll_button)
+        rollButton.text = "Let`s Roll"
+        // COMPLETED (03) set the OnClickListener for the button
+        rollButton.setOnClickListener {
+            // COMPLETED (04) Show a Toast when the OnClickListener is called
+            Toast.makeText(this, "You pressed the Button!", Toast.LENGTH_SHORT).show()
+        }
 
     }
 
