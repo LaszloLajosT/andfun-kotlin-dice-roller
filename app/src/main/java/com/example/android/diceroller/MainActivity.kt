@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         // COMPLETED (02) Use findViewById to get a reference to the button
         // and assign it to an immutable variable called rollButton
         val rollButton: Button = findViewById(R.id.roll_button)
@@ -36,7 +37,5 @@ class MainActivity : AppCompatActivity() {
             // COMPLETED (04) Show a Toast when the OnClickListener is called
             Toast.makeText(this, "You pressed the Button!", Toast.LENGTH_SHORT).show()
         }
-
     }
-
 }
