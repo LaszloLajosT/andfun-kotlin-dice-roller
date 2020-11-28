@@ -22,7 +22,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             // use the keyboard shortcut:
             //    Windows/Linux - Alt + Enter
             //    Mac - Option + Enter
-
             rollDice()
         }
     }
