@@ -24,6 +24,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+
+    // COMPLETED (01) Extract the image view variable here. You will need to use lateinit
     lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             rollDice()
         }
 
+        // COMPLETED (02) Initialize the image view variable here
         diceImage = findViewById(R.id.dice_image)
     }
 
@@ -49,6 +52,7 @@ class MainActivity : AppCompatActivity() {
             else -> R.drawable.dice_6
         }
 
+        // COMPLETED (03) Remove this local variable so that you use your new diceImage field
         diceImage.setImageResource(drawableResource)
     }
 }
