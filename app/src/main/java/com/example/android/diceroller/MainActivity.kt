@@ -24,6 +24,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+
     // COMPLETED (01) Extract the image view variable here. You will need to use lateinit
     lateinit var diceImage: ImageView
 
